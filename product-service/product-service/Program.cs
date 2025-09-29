@@ -1,6 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using product_service.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+//----------Conecion a BD
+builder.Services.AddDbContext<AppDbContext>( o =>
+{
+    o.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSQL"));
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

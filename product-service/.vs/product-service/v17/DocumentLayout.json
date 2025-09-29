@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C1221DF8-F9C5-4501-8012-5133094C40E7}|product-service\\product-service.csproj|c:\\users\\usuario\\documents\\potafolio\\technicaltests\\netby-test\\product-service\\product-service\\models\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1221DF8-F9C5-4501-8012-5133094C40E7}|product-service\\product-service.csproj|solutionrelative:product-service\\models\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1221DF8-F9C5-4501-8012-5133094C40E7}|product-service\\product-service.csproj|c:\\users\\usuario\\documents\\potafolio\\technicaltests\\netby-test\\product-service\\product-service\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1221DF8-F9C5-4501-8012-5133094C40E7}|product-service\\product-service.csproj|solutionrelative:product-service\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1221DF8-F9C5-4501-8012-5133094C40E7}|product-service\\product-service.csproj|c:\\users\\usuario\\documents\\potafolio\\technicaltests\\netby-test\\product-service\\product-service\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1221DF8-F9C5-4501-8012-5133094C40E7}|product-service\\product-service.csproj|solutionrelative:product-service\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1221DF8-F9C5-4501-8012-5133094C40E7}|product-service\\product-service.csproj|c:\\users\\usuario\\documents\\potafolio\\technicaltests\\netby-test\\product-service\\product-service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1221DF8-F9C5-4501-8012-5133094C40E7}|product-service\\product-service.csproj|solutionrelative:product-service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Transaccion.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\product-service\\Models\\Transaccion.cs",
+              "RelativeDocumentMoniker": "product-service\\Models\\Transaccion.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\product-service\\Models\\Transaccion.cs",
+              "RelativeToolTip": "product-service\\Models\\Transaccion.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T01:59:06.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\product-service\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "product-service\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\product-service\\Models\\Producto.cs",
+              "RelativeToolTip": "product-service\\Models\\Producto.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T01:58:45.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\product-service\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "product-service\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\product-service\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "product-service\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T01:45:48.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\product-service\\Program.cs",
+              "RelativeDocumentMoniker": "product-service\\Program.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\product-service\\Program.cs",
+              "RelativeToolTip": "product-service\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T01:28:02.894Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
