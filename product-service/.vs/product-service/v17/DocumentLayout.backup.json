@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F9229844-9609-4A96-B28C-724367AC92B6}|transaccion-service\\transaccion-service.csproj|c:\\users\\usuario\\documents\\potafolio\\technicaltests\\netby-test\\product-service\\transaccion-service\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9229844-9609-4A96-B28C-724367AC92B6}|transaccion-service\\transaccion-service.csproj|solutionrelative:transaccion-service\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9229844-9609-4A96-B28C-724367AC92B6}|transaccion-service\\transaccion-service.csproj|c:\\users\\usuario\\documents\\potafolio\\technicaltests\\netby-test\\product-service\\transaccion-service\\repository\\transaccionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9229844-9609-4A96-B28C-724367AC92B6}|transaccion-service\\transaccion-service.csproj|solutionrelative:transaccion-service\\repository\\transaccionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9229844-9609-4A96-B28C-724367AC92B6}|transaccion-service\\transaccion-service.csproj|c:\\users\\usuario\\documents\\potafolio\\technicaltests\\netby-test\\product-service\\transaccion-service\\models\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9229844-9609-4A96-B28C-724367AC92B6}|transaccion-service\\transaccion-service.csproj|solutionrelative:transaccion-service\\models\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9229844-9609-4A96-B28C-724367AC92B6}|transaccion-service\\transaccion-service.csproj|c:\\users\\usuario\\documents\\potafolio\\technicaltests\\netby-test\\product-service\\transaccion-service\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9229844-9609-4A96-B28C-724367AC92B6}|transaccion-service\\transaccion-service.csproj|solutionrelative:transaccion-service\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 389,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\transaccion-service\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "transaccion-service\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\transaccion-service\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "transaccion-service\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:36:24.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Transaccion.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\transaccion-service\\Models\\Transaccion.cs",
+              "RelativeDocumentMoniker": "transaccion-service\\Models\\Transaccion.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\transaccion-service\\Models\\Transaccion.cs",
+              "RelativeToolTip": "transaccion-service\\Models\\Transaccion.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:35:04.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\transaccion-service\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "transaccion-service\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\transaccion-service\\Models\\Producto.cs",
+              "RelativeToolTip": "transaccion-service\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T04:23:24.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransaccionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\transaccion-service\\Repository\\TransaccionRepository.cs",
+              "RelativeDocumentMoniker": "transaccion-service\\Repository\\TransaccionRepository.cs",
+              "ToolTip": "C:\\Users\\usuario\\Documents\\POTAFOLIO\\technicaltests\\netby-test\\product-service\\transaccion-service\\Repository\\TransaccionRepository.cs",
+              "RelativeToolTip": "transaccion-service\\Repository\\TransaccionRepository.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAAE0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T00:10:27.582Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

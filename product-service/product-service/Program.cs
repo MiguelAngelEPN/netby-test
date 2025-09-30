@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using product_service.Data;
+using product_service.Repository;
+using product_service.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,9 @@ builder.Services.AddDbContext<AppDbContext>( o =>
 {
     o.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSQL"));
 });
+
+//----------registro de servicios
+builder.Services.AddScoped<IProductService, ProductRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

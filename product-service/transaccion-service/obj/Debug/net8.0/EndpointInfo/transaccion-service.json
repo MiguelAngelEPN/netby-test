@@ -1,0 +1,343 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "transaccion-service",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/transaccion-service/Transaccion/gettransaccionlist": {
+      "get": {
+        "tags": [
+          "Transaccion"
+        ],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "amount",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/transaccion-service/Transaccion/registertransaccion": {
+      "post": {
+        "tags": [
+          "Transaccion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransaccionDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransaccionDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransaccionDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/transaccion-service/Transaccion/updatetransaccion": {
+      "put": {
+        "tags": [
+          "Transaccion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Transaccion"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Transaccion"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Transaccion"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/transaccion-service/Transaccion/{id}": {
+      "delete": {
+        "tags": [
+          "Transaccion"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Producto": {
+        "required": [
+          "nombre",
+          "precio",
+          "stock"
+        ],
+        "type": "object",
+        "properties": {
+          "productoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "descripcion": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "categoria": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "imagen": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "precio": {
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "stock": {
+            "maximum": 2147483647,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaCreacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaActualizacion": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoTransaccion": {
+        "enum": [
+          "COMPRA",
+          "VENTA"
+        ],
+        "type": "string"
+      },
+      "Transaccion": {
+        "required": [
+          "cantidad",
+          "precioUnitario",
+          "productoId",
+          "tipoTransaccion"
+        ],
+        "type": "object",
+        "properties": {
+          "transaccionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "tipoTransaccion": {
+            "$ref": "#/components/schemas/TipoTransaccion"
+          },
+          "productoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "producto": {
+            "$ref": "#/components/schemas/Producto"
+          },
+          "cantidad": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "precioUnitario": {
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "precioTotal": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
+          },
+          "detalle": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TransaccionDto": {
+        "required": [
+          "cantidad",
+          "precioUnitario",
+          "productoId",
+          "tipoTransaccion"
+        ],
+        "type": "object",
+        "properties": {
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "tipoTransaccion": {
+            "$ref": "#/components/schemas/TipoTransaccion"
+          },
+          "productoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cantidad": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "precioUnitario": {
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "detalle": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
